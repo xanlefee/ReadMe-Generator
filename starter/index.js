@@ -34,7 +34,7 @@ function init() {
         {
             type: "input",
             name: "name",
-            message: "Howdy Partner, what's your full name?"
+            message: "Let's make a great README. First, what's your full name?"
 
         },
 
@@ -47,15 +47,10 @@ function init() {
         {
             type: "input",
             name: "description",
-            message: "Describe your project"
+            message: "Describe your project in a few sentences"
 
         },
-        {
-            type: "input",
-            name: "contents",
-            message: "Do you want a table of contents?"
-
-        },
+       
 
         {
             type: "input",
@@ -89,7 +84,14 @@ function init() {
         {
             type: "input",
             name: "tests",
-            message: "what command should be used to run tests?"
+            message: "What command should be used to run tests?"
+
+        },
+
+        {
+            type: "input",
+            name: "questions",
+            message: "Please write any questions you have for your users"
 
         },
 
@@ -103,19 +105,9 @@ function init() {
 
     .then((answers) => {
         const readmeContent = generateMarkdown(answers);
-        const name= answers.name;
-        const title = answers.title;
-        const description = answers.description;
-        const contents = answers.contents;
-        const installation = answers.installation;
-        const usage = answers.usage;
-        const license = answers.license;
-        const contributing = answers.contributing;
-        const tests = answers.tests;
-        const questions = answers.questions;
-        const github = answers.github;
+      
 
-        writeToFile('README.md', readmeContent);
+        writeToFile('./generated/README.md', readmeContent);
     })
 
 };
