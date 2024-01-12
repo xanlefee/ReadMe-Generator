@@ -2,37 +2,44 @@
 function generateMarkdown(data) {
   return `
   
-  ${data.title}
+  # ${data.title}
 
-  # Description 
+  ## Description
   ${data.description}
 
-  # Table of Contents
-  ${data.contents}
+## Table of Contents
+ 
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-  # Installation
+
+## Installation
   ${data.installation}
 
-  # Usage
+## Usage
   ${data.usage}
 
 
-  # License
+## License
   ${data.license}
 
-  # Contributing
+## Contributing
   ${data.contributing}
 
-  #Tests
+## Tests
   ${data.tests}
 
-  #Questions
+## Questions
   ${data.questions}
 
   
-  View this repo on [Github](http://github.com/${data.github})
+View this repo on [Github](http://github.com/${data.github})
 
-  By ${data.name}
+By ${data.name}
   
 
 
