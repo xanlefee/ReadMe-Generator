@@ -1,9 +1,9 @@
 
   
-  # g
+  # ReadMe Generator
 
   ## Description
-  g
+  A readme generator that dynamically generates a readme file using the command line.
 
 ## Table of Contents
  
@@ -16,28 +16,28 @@
 
 
 ## Installation
-  g
+  Ensure npm i is installed. When you are ready to generate the file, open the index.js file in integrated terminal and type 'node index.js'
 
 ## Usage
-  g
+  The purpose of the project is to create a professional README.md file with the correct formatting. 
 
 
 ## License
   MIT
 
 ## Contributing
-  k
+  The project is complete but you can generate a README.md file yourself. 
 
 ## Tests
-  l
+  npm test
 
 ## Questions
-  k
+  How do you like the readme generator?
 
   
-View this repo on [Github](http://github.com/k)
+View this repo on [Github](http://github.com/xanlefee)
 
-By n
+By Xanthe E. Horner
   
 
 
